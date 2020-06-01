@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="weatherapi.js"></script>
+  </head>
+  <body>
+
+    <!--header+search bar-->
+    <div id="head">
+      <h1> Weather App </h1>
+      <div id="searchbar">
+        <input type="text" id="city" placeholder="Enter your city..."><br>
+        <button type="button" id="search" onclick="getWeather()">Search</button>
+      </div>
+    </div>
+
+    <!--meta info section-->
+    <div id="weatherDisplay">
+      <div id="leftdiv">
+        <div id="cityname"></div>
+        <div id="currenttemp"></div>
+        <div id="description"></div>
+        <div id="description2"></div>
+      </div>
+      <div id="rightdiv">
+        <div id="feelslike"></div>
+        <div id="maxtemp"></div>
+        <div id="mintemp"></div>
+        <div id="humidity"></div>
+        <div id="windspeed"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

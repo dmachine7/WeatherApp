@@ -1,0 +1,104 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("images/pleasant.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+/*main heading*/
+#head{
+  font-size: 30px;
+  background-color: #00a8cc;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+/*search bar*/
+#searchbar{
+  height: 100%;
+  padding: 0;
+  margin-top: 20px;
+}
+#searchbar #city{
+  background-color: #00a8cc;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height:50px;
+  font-size: 25px;
+  width: 400px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid white;
+}
+::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+}
+#searchbar #search{
+  float: right;
+  background-color: #0c7b93;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  height:50px;
+  width: 100px;
+  outline: none;
+  border: none;
+}
+#searchbar #city:hover{
+  background-color: #0c7b93;
+}
+#searchbar #search:hover{
+  background-color: rgb(20, 40, 80);
+}
+/*meta info display*/
+#weatherDisplay{
+  width: 100%;
+  color: white;
+  display: none;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+#leftdiv{
+  width: 50%;
+  background-color: rgba(20, 40, 80, 0.6);
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+}
+#rightdiv{
+  width: 50%;
+  background-color: rgba(20, 40, 80, 0.5);
+  font-size: 30px;
+  padding: 30px;
+}
+#rightdiv div{
+  padding: 20px;
+}
+#leftdiv div{
+  padding: 15px;
+}
+#currenttemp{
+  font-size: 80px;
+}
+#description2{
+  font-size: 30px;
+}
+#rightdiv:hover, #leftdiv:hover{
+  background-color: rgba(20, 40, 80, 0.8);
+}
+/*responsivenss*/
+@media only screen and (max-width: 600px) {
+  #head{
+    flex-direction: column;
+  }
+  #rightdiv div {
+    font-size: 15px;
+    padding: 12px;
+  }
+  #leftdiv div{
+    font-size: 22px;
+    padding: 10px;
+  }
+  #leftdiv #currenttemp{
+    font-size: 32px;
+  }
+}
