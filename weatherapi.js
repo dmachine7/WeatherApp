@@ -23,7 +23,7 @@ function getWeather(){
     document.getElementById("description2").innerHTML=  weatherObj.weather[0].description;
     document.getElementById("maxtemp").innerHTML=  "Max temp : "+weatherObj.main.temp_max + " °C";
     document.getElementById("mintemp").innerHTML=  "Min temp : "+weatherObj.main.temp_min + " °C";
-    document.getElementById("humidity").innerHTML=  "Humdity : "+weatherObj.main.humidity +" %";
+    document.getElementById("humidity").innerHTML=  "Humidity : "+weatherObj.main.humidity +" %";
     document.getElementById("windspeed").innerHTML=  "Wind speed : "+weatherObj.wind.speed + " m/s";
     setBg(weatherObj);
   }
